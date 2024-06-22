@@ -1,9 +1,20 @@
-import com.dio.Fila;
-import com.dio.No;
+import com.dio.filas.Fila;
+import com.dio.filas.No;
+import com.dio.lista.List;
 
 public class Main {
     public static void main(String[] args) {
 
+        List<String> myList = new List<>();
+
+        myList.add("peimeiro");
+        myList.add("segundo");
+        myList.add("terceiro");
+        myList.add("quarto");
+
+        System.out.println(myList.get(0));
+
+        //Estudo de implementação de filas
         Fila fila = new Fila();
 
         fila.enqueue(new No("peimeiro"));
